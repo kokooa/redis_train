@@ -4,17 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "01": "node 01-connection.js",
-    "02": "node 02-strings.js",
-    "03": "node 03-lists.js",
-    "04": "node 04-hashes.js",
-    "05": "node 05-sets.js",
-    "06": "node 06-sorted-sets.js",
-    "07": "node 07-pub-sub.js",
-    "08": "node 08-transactions.js",
-    "09": "node 09-expiry-and-cache.js",
-    "10": "node 10-pipeline.js",
-    "11": "node 11-key-management.js"
+    "01": "tsx 01-connection.ts",
+    "02": "tsx 02-strings.ts",
+    "03": "tsx 03-lists.ts",
+    "04": "tsx 04-hashes.ts",
+    "05": "tsx 05-sets.ts",
+    "06": "tsx 06-sorted-sets.ts",
+    "07": "tsx 07-pub-sub.ts",
+    "08": "tsx 08-transactions.ts",
+    "09": "tsx 09-expiry-and-cache.ts",
+    "10": "tsx 10-pipeline.ts",
+    "11": "tsx 11-key-management.ts",
+    "typecheck": "tsc --noEmit"
   },
   "keywords": [],
   "author": "",
@@ -22,5 +23,10 @@
   "type": "commonjs",
   "dependencies": {
     "redis": "^5.11.0"
+  },
+  "devDependencies": {
+    "@types/node": "^25.5.2",
+    "tsx": "^4.21.0",
+    "typescript": "^6.0.2"
   }
 }
